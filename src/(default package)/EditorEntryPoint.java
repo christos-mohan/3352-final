@@ -1,3 +1,4 @@
+// Begins the code
 public class EditorEntryPoint {
     public static void main(String[] args) throws Exception {
         

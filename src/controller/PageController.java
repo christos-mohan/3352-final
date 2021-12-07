@@ -1,10 +1,12 @@
 package controller;
 
+// Controller associated with Page model
 public class PageController {
 
     model.Page model;
     view.OnePageView view;
 
+    // Constructor
     public PageController(model.Page model, view.OnePageView view) {
         
         this.view = view;
@@ -16,6 +18,7 @@ public class PageController {
 
     }
 
+    // Update the model
     public void updateModel(String pageNameNumber) {
 
         // split the name from the number
@@ -28,7 +31,5 @@ public class PageController {
         view.show();
 
     }
-
-    
 
 }

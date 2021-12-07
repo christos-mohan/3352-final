@@ -2,6 +2,7 @@ package model;
 
 import java.util.ArrayList;
 
+// Abstract class of 
 public abstract class Subject {
 
     ArrayList<Observer> observers = new ArrayList();
