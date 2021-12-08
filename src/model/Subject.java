@@ -2,9 +2,10 @@ package model;
 
 import java.util.ArrayList;
 
-// Abstract class of 
+// Abstract class of Subject
 public abstract class Subject {
 
+    // Maintaining a list of observers
     ArrayList<Observer> observers = new ArrayList();
 
     public void attach(Observer o) {

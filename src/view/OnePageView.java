@@ -5,7 +5,7 @@ public class OnePageView extends model.Observer {
     private model.Page model;
     private controller.PageController controller;
 
-    // Constructor 1
+    // Constructor 1 with two member variables to access them from any method
     public OnePageView(model.Page model, controller.PageController controller) {
 
         this.setModel(model);
@@ -28,9 +28,10 @@ public class OnePageView extends model.Observer {
     
     ///TODO:
     public void onPageUpdate() {
-        // Collects update from user
-        String newPageInfo = "SE3352 - Somethign";
+        // Collects update from user 
+        String newPageInfo = "SE3352 - Week 10 Lessons";
 
+        // Sends the new page info to be updated from the model 
         this.controller.updateModel(newPageInfo);
 
     }
