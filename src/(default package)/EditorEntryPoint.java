@@ -4,10 +4,7 @@ public class EditorEntryPoint {
         
         model.Page m = new model.Page();
         view.OnePageView v = new view.OnePageView();
-        //testing again
-
         controller.PageController c = new controller.PageController(m, v);
-
 
     }
 }

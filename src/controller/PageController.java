@@ -21,23 +21,16 @@ public class PageController {
 
         // View allows the controller to give it a command to display itself
         view.show();
-
-
     }
 
     // Update the model
-    public void updateModel(String pageNameNumber) {
-
-        // split the name from the number
-        // String courseName = "";
-        // String courseNumber = "";
-        
-        // model.setCourseName(courseName);
-        // model.setCourseNumber(courseNumber);
+    public void updateModel(String lessonName, String pageName) {
+        // Update attrbiutes with new values
+        model.setLessonName(lessonName);
+        model.setPageName(pageName);
 
         // Using the same method as before to update the controller 
         view.show();
-
     }
 
 }

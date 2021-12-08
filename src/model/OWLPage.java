@@ -2,13 +2,8 @@ package model;
 
 import java.util.ArrayList;
 
-<<<<<<< HEAD:src/model/Subject.java
-// Abstract class of Subject that model classes will extend
-public abstract class Subject {
-=======
-// Abstract class of OWLPage
+// Abstract class of OWLPage (acts as a subject) that model classes will extend
 public abstract class OWLPage {
->>>>>>> 3ad2ba25417523b44b81c2f0ad4019e72b6c5b79:src/model/OWLPage.java
 
     // Maintaining a list of observers
     ArrayList<Observer> observers = new ArrayList();
@@ -24,7 +19,7 @@ public abstract class OWLPage {
     }
 
     // Notifies all observers when a change has been made
-    public void notify() {
+    public void Notify() {
         for (Observer o : observers) {
             o.update();
         }

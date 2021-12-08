@@ -12,7 +12,7 @@ public class OnePageView extends model.Observer {
         this.setController(controller);
     }
 
-    // Constructor 2
+    // Constructor 2 allows the user to create a blank page and assign a model and controller at a later time
     public OnePageView() {
 
     }
@@ -22,14 +22,14 @@ public class OnePageView extends model.Observer {
         this.show();
     }
     
-    ///TODO:
+    // Takes user input to update the model
     public void onPageUpdate() {
         // Collects update from user 
-        String newPageInfo = "SE3352 - Week 10 Lessons";
+        String newLessonLabel = "Week 10";
+        String newPageName = "Architecture Design Patterns";
 
         // Sends the new page info to be updated from the model 
-        this.controller.updateModel(newPageInfo);
-
+        this.controller.updateModel(newLessonLabel, newPageName);
     }
 
     // Display the page

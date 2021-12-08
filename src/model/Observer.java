@@ -1,7 +1,5 @@
 package model;
 
-import java.util.ArrayList;
-
 // Abstract class that views will extend; used for updating subjects (ie. Pages)
 public abstract class Observer {
 
