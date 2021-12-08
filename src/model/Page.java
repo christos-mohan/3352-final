@@ -1,6 +1,7 @@
 package model;
 import java.util.ArrayList;
 
+// Concrete Subject called Page
 public class Page extends Subject {
 
     private String pageName;

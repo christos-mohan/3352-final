@@ -1,5 +1,6 @@
 package view;
 
+// Concrete Observer
 public class OnePageView extends model.Observer {
 
     private model.Page model;
@@ -7,11 +8,8 @@ public class OnePageView extends model.Observer {
 
     // Constructor 1 with two member variables to access them from any method
     public OnePageView(model.Page model, controller.PageController controller) {
-
         this.setModel(model);
-        
         this.setController(controller);
-
     }
 
     // Constructor 2
@@ -21,9 +19,7 @@ public class OnePageView extends model.Observer {
 
     // Update contents of the page
     public void update() {
-
         this.show();
-
     }
     
     ///TODO:
@@ -46,7 +42,7 @@ public class OnePageView extends model.Observer {
         return model;
     }
 
-    // Set the model
+    // Set the model (ie. attach the view to a model)
     public void setModel(model.Page model) {
         // If there is an existing model, remove it
         if (this.model != null) {

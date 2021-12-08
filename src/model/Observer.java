@@ -2,10 +2,10 @@ package model;
 
 import java.util.ArrayList;
 
-//testing for git push
-// Abstract class used for updating subjects (and the pages are subsets of the subject)
+// Abstract class that views will extend; used for updating subjects (ie. Pages)
 public abstract class Observer {
 
+    // Method to ensure that Observers can be updated when the Subject calls on its notify method
     public abstract void update();    
     
 }
