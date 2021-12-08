@@ -1,7 +1,7 @@
 package model;
 import java.util.ArrayList;
 
-public class Page extends Subject {
+public class Page extends OWLPage {
 
     private String pageName;
     private String pageNumber;
@@ -25,11 +25,6 @@ public class Page extends Subject {
         this.pageNumber = pageNumber;
     }
 
-    // Creating function that gets comments
-    // public String getComments() {
-    //     return comments;
-    // }
-
     // Creating function that adds the comment
     public void getComments (String c) {
         for (int i = 0; i < this.comments.size(); i++) {
@@ -42,6 +37,7 @@ public class Page extends Subject {
         this.comments.add(comment);
     } 
 
+
     public void addLesson (String lesson) {
         this.lessons.add(lesson);
     } 
@@ -50,6 +46,10 @@ public class Page extends Subject {
         for (int i = 0; i < this.lessons.size(); i++) {
             System.out.println(this.lessons.get(i));
         }
+    }
+
+    public void reorderLessons() {
+        // Takes in user inputs on screen to reorder lessons
     }
     
 }

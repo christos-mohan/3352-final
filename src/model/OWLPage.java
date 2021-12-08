@@ -2,8 +2,8 @@ package model;
 
 import java.util.ArrayList;
 
-// Abstract class of Subject
-public abstract class Subject {
+// Abstract class of OWLPage
+public abstract class OWLPage {
 
     // Maintaining a list of observers
     ArrayList<Observer> observers = new ArrayList();
