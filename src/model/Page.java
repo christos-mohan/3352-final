@@ -7,12 +7,13 @@ public class Page extends Subject {
     private String pageNumber;
     // private String [] comments; 
     private ArrayList<String> comments = new ArrayList() ; 
+    private ArrayList<String> lessons = new ArrayList();
    
     public String getPageName() {
         return pageName;
     }
 
-    public void setPageName(String pageeName) {
+    public void setPageName(String pageName) {
         this.pageName = pageName;
     }
 
@@ -31,12 +32,24 @@ public class Page extends Subject {
 
     // Creating function that adds the comment
     public void getComments (String c) {
-        this.comments.add(c);
+        for (int i = 0; i < this.comments.size(); i++) {
+            System.out.println(this.comments.get(i));
+        }
     }
 
-    // Creating function that adds the comment
-    // public void addComments (String comments) {
-    //     this.comments.push(comments);
-    // } 
+    //Creating function that adds the comment
+    public void addComment (String comment) {
+        this.comments.add(comment);
+    } 
+
+    public void addLesson (String lesson) {
+        this.lessons.add(lesson);
+    } 
+
+    public void getLessons() {
+        for (int i = 0; i < this.lessons.size(); i++) {
+            System.out.println(this.lessons.get(i));
+        }
+    }
     
 }
